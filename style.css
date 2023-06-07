@@ -17,7 +17,7 @@
 
 .light{
   --text-color:black;
-  --bg-url: url(assets/bg-mobile-light.jpg);
+  --bg-url: url(assets/bg-desktop-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -30,7 +30,7 @@ body{
   background-image: var(--bg-url);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   height: 92.5vh;
   
 }
@@ -41,7 +41,9 @@ body *{
 }
 
 main{
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
+  min-width: 250px;
   margin: auto;
   margin-top: 56px;
   margin-right: auto;
